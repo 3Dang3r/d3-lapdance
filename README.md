@@ -11,6 +11,7 @@ Welcome to the official **d3-Lapdance** script for your FiveM server! Spice up y
 - 👀 Camera and player control disabled during the dance for immersion
 - ⏳ Cooldown system to prevent spam
 - ❌ Automatic cleanup and reset after the dance
+- 🔞 NSFW Script (Nudity)
 
 ---
 
