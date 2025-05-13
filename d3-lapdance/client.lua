@@ -4,14 +4,6 @@ local InCooldown = false
 local NearText = false
 local NearMarker = false
 
-
-
-RegisterNetEvent('d3-lapdamce:paybitch', function(data)
-	TriggerServerEvent('d3-lapdance:buy')
-end) 
--- for qb-target use
-
-
 RegisterNetEvent('d3-lapdance:lapdance')
 AddEventHandler('d3-lapdance:lapdance', function(PlayerMoney, PlayerBirthdate, TodayDate)
 	local Player = PlayerPedId()
