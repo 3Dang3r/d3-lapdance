@@ -1,10 +1,5 @@
 local QWHub = exports['qw-players']:GetCoreObject()
-
-local NewestVersion = nil 
-local ChangeLogText = nil 
-
 local LapDanceActive = false
-
 local NotEnoughMoney = "You do not have enough money. A lap dance costs 100$"
 local StripperPause = "The stripper needs some rest!"
 local StripperActive = "The stripper is already busy!"
@@ -13,7 +8,7 @@ local BoughtLapdance = "You just bought a lap dance for 100$"
 RegisterServerEvent('d3-lapdance:buy')
 AddEventHandler('d3-lapdance:buy', function()
     local src = source
-    local Cost = 250 -- Ensure this is a number
+    local Cost = 250 
     local TodayDate = os.date("%Y-%m-%d")
 
     local Player = QWHub.Functions.GetPlayer(src)
