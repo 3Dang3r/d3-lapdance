@@ -45,15 +45,4 @@ You can trigger the lap dance with:
 
 
 ```TriggerServerEvent('d3-lapdance:buy')```
-Or
-```
-
-        options = {
-            {
-				type = "client", 
-				event = "d3-lapdamce:paybitch",
-				icon = 'fas fa-money-bill-1-wave',
-				label = 'Pay For Lapdnace', 
-            },
-        },
 
