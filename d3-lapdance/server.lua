@@ -1,4 +1,4 @@
-local QWHub = exports['qw-players']:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 local LapDanceActive = false
 local NotEnoughMoney = "You do not have enough money. A lap dance costs 100$"
 local StripperPause = "The stripper needs some rest!"
@@ -11,17 +11,17 @@ AddEventHandler('d3-lapdance:buy', function()
     local Cost = 250 
     local TodayDate = os.date("%Y-%m-%d")
 
-    local Player = QWHub.Functions.GetPlayer(src)
+    local Player = QBCore.Functions.GetPlayer(src)
     local PlayerMoney = Player and Player.PlayerData and Player.PlayerData.money and Player.PlayerData.money.cash
 
     if not Player or not PlayerMoney or PlayerMoney < Cost or LapDanceActive then
         local msg = LapDanceActive and StripperActive or NotEnoughMoney
-        TriggerClientEvent('QWHub:Notify', src, msg, "error", 1700)
+        TriggerClientEvent('QBCore:Notify', src, msg, "error", 1700)
         return
     end
 
     Player.Functions.RemoveMoney("cash", Cost)
-    TriggerClientEvent('QWHub:Notify', src, BoughtLapdance, "success", 1700)
+    TriggerClientEvent('QBCore:Notify', src, BoughtLapdance, "success", 1700)
     TriggerClientEvent('d3-lapdance:lapdance', src, PlayerMoney)
 end)
 
