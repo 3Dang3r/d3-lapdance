@@ -19,6 +19,7 @@ Welcome to the official **d3-Lapdance** script for your FiveM server! Spice up y
 
 - ✅ [QBCore / qb-core](https://github.com/qbcore-framework/qb-core)
 - 🎯 Recommended: `qb-target` support for interaction (not required)
+- ✨ Vanilla Unicorn Default MLO
 
 ---
 
