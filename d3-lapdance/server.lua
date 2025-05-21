@@ -3,7 +3,7 @@ local LapDanceActive = false
 local NotEnoughMoney = "You do not have enough money. A lap dance costs 250$"
 local StripperPause = "The stripper needs some rest!"
 local StripperActive = "The stripper is already busy!"
-local BoughtLapdance = "You just bought a lap dance for 100$"
+local BoughtLapdance = "You just bought a lap dance for 250$"
 
 RegisterServerEvent('d3-lapdance:buy')
 AddEventHandler('d3-lapdance:buy', function()
