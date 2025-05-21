@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local LapDanceActive = false
-local NotEnoughMoney = "You do not have enough money. A lap dance costs 100$"
+local NotEnoughMoney = "You do not have enough money. A lap dance costs 250$"
 local StripperPause = "The stripper needs some rest!"
 local StripperActive = "The stripper is already busy!"
 local BoughtLapdance = "You just bought a lap dance for 100$"
